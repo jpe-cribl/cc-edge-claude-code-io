@@ -12,7 +12,7 @@ jobs:
   test:
     # Skip on the template repo itself; consumer repos have is_template: false.
     if: github.event.repository.is_template == false
-    uses: jpe-cribl/.github/.github/workflows/cribl-pack-validate.yml@ceacd0a7ad2be7a439938bf5ff47151e33b22f24 # main
+    uses: jpe-cribl/.github/.github/workflows/cribl-pack-validate.yml@f4fce4709d47a30636b821c0b16c8e3a4cb736af # main
     with:
       # CHANGE per pack: 'edge' for Cribl Edge packs, 'stream' for Cribl Stream packs.
       pack_type: edge
